@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <nav
@@ -12,7 +18,7 @@
     >
       <p class="font-semibold chungus">Yifei Fang</p>
       <ul class="flex gap-6">
-        <li><a class="chungus" href="#hero">Home</a></li>
+        <li><a class="chungus sm:visible" href="#hero">Home</a></li>
         <li><a class="chungus" href="#projects">Projects</a></li>
         <li><a class="chungus" href="#experience">Experience</a></li>
         <li><a class="chungus" href="#contact">Contact</a></li>
@@ -22,7 +28,7 @@
       </ul>
     </nav>
 
-    <div class="relative">
+    <div class="relative overflow-hidden">
       <p class="text-purpletext text-7xl absolute top-40 rotate-12">
         &lt;header&gt;&lt;/header&gt;
       </p>
@@ -36,20 +42,21 @@
 
     <section
       id="hero"
-      class="pt-60 flex gap-20 text-right bg-grey_transparent h-screen"
+      class="pt-60 flex flex-col-reverse md:flex-row gap-20 text-right bg-grey_transparent h-screen"
     >
-      <div class="flex2 py-24">
+      <div class="flex2 py-16">
         <h1 class="text-5xl my-4">
           <span class="text-purpletext_dark">&lt;h1&gt;</span>Hello! I'm Yifei
         </h1>
-        <h2 class="text-4xl mb-4">
+        <h2 class="text-4xl mb-4 font-normal">
           <span class="text-bluetext_dark">&lt;h2&gt;</span>Student Developer
         </h2>
-        <p class="ml-20 font-light">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
+        <p class="ml-20 font-normal text-lg">
+          I am currently a student at Vanderbilt University studying Computer
+          Science and Economics. I started off as someone who wanted to post his
+          writing on a blog, which got me into coding and web development. Now I
+          am looking to continue improving my programming skills and gain more
+          work experience!
         </p>
       </div>
       <div class="flex-1 mr-40">
@@ -66,7 +73,7 @@
       </div>
     </section>
 
-    <div class="relative">
+    <div class="relative overflow-hidden">
       <p class="text-purpletext text-9xl absolute rotate3">!==</p>
       <p class="text-bluetext text-8xl absolute rotate5">
         &lt;div&gt;&lt;/div&gt;
@@ -82,65 +89,66 @@
       </h2>
       <div class="flex px-20 pt-20 gap-10">
         <div>
-          <img src="./dist/ekreb.png" alt="" style="min-width: 300px" />
+          <img src="./dist/rabits.png" alt="" style="max-width: 600px" />
         </div>
-        <div>
-          <h3 class="text-2xl mb-4">
-            <a href=""
-              >Habit Tracker<span class="text-bluetext_dark"
-                >&lt;/a href="click me!"&gt;</span
-              ></a
-            >
-          </h3>
-          <p class="mb-4 text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <p class="text-lg">Tools: MERN stack</p>
-        </div>
-      </div>
-      <div class="flex px-20 pt-20 gap-10">
-        <div>
-          <img src="./dist/ekreb.png" alt="" style="min-width: 300px" />
-        </div>
-        <div>
-          <h3 class="text-2xl mb-4">
-            <a href=""
-              >Habit Tracker<span class="text-bluetext_dark"
-                >&lt;/a href="click me!"&gt;</span
-              ></a
-            >
-          </h3>
-          <p class="mb-4 text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </p>
-          <p class="text-lg">Tools: MERN stack</p>
+        <div class="flex">
+          <div class="my-auto">
+            <h3 class="text-2xl mb-4">Habit Tracker</h3>
+            <p class="mb-4 text-lg">
+              A full-stack habit tracker app where the user add new habits or
+              edit and delete existing habits. When a habit is completed, the
+              user will gain carrots, and when enough carrots are attained, the
+              user will level up and get a new rabbit.
+            </p>
+            <p class="text-lg mb-2">
+              Tools: MongoDB, Express.js, React, Node.js
+            </p>
+            <p class="text-lg hover:underline">
+              <a href="https://github.com/yifeifang11/rabits">GitHub Link</a>
+            </p>
+          </div>
         </div>
       </div>
       <div class="flex px-20 pt-20 gap-10">
         <div>
-          <img src="./dist/ekreb.png" alt="" style="min-width: 300px" />
+          <img src="./dist/taste.png" alt="" style="max-width: 600px" />
+        </div>
+        <div class="flex">
+          <div class="my-auto">
+            <h3 class="text-2xl mb-4">Recipe Generator</h3>
+            <p class="mb-4 text-lg">
+              A AI-powered recipe generator, tailored for the elderly. A user
+              can create a new account and save their dietary preferences and
+              restrictions, then they can generate a recipe by entering what
+              they want to eat. The generator will create a recipe that
+              accommodates dietary restrictions.
+            </p>
+            <p class="text-lg mb-2">Tools: React, Firebase, ChatGPT</p>
+            <p class="text-lg hover:underline">
+              <a
+                href="https://devpost.com/software/timeless-taste?ref_content=user-portfolio&ref_feature=in_progress"
+                >DevPost Link</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex px-20 pt-20 gap-10">
+        <div>
+          <img src="./dist/ekreb.png" alt="" style="max-width: 600px" />
         </div>
         <div>
-          <h3 class="text-2xl mb-4">
-            <a href=""
-              >Habit Tracker<span class="text-bluetext_dark"
-                >&lt;/a href="click me!"&gt;</span
-              ></a
-            >
-          </h3>
+          <h3 class="text-2xl mb-4">Habit Tracker</h3>
           <p class="mb-4 text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            A full-stack habit tracker app where the user add new habits or edit
+            and delete existing habits. When a habit is completed, the user will
+            gain carrots, and when enough carrots are attained, the user will
+            level up and get a new rabbit.
           </p>
-          <p class="text-lg">Tools: MERN stack</p>
+          <p class="text-lg mb-2">Tools: React, Express.js</p>
+          <p class="text-lg hover:underline">
+            <a href="https://github.com/yifeifang11/unscramble">GitHub Link</a>
+          </p>
         </div>
       </div>
     </section>
@@ -185,7 +193,7 @@
       </h2>
       <p class="text-2xl">
         If you would like to reach out to me, please email me at
-        <a href="mailto: yifei.fang@vanderbilt.edu"
+        <a class="hover:underline" href="mailto: yifei.fang@vanderbilt.edu"
           ><span class="text-bluetext_dark">&lt;a&gt;</span
           >yifei.fang@vanderbilt.edu<span class="text-bluetext_dark"
             >&lt;a&gt;</span
